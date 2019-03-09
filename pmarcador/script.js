@@ -3,41 +3,18 @@
 //   console.log(resa);
 // }
 
-class Equipo {
-    constructor(nombre){
-        this.nombre = nombre;
-        this.score = 0;
-    }
-    suma(resultado){
-        this.score += resultado; 
-    }
-}
+var equipos = ["A","B","C","D","E","F","G","H","I"];
 
-const carga = () => {
-
-    var nombres = ["A","B","C","D","E","F","G","H","I"];
-    var equipos = [];
-
-    nombres.forEach(function(i){
-        var aux = new Equipo(nombres[i]);
-        console.log(nombres[i])
-        equipos.push(aux);
-    })
-
-    console.log(equipos)
-} 
-
-
-
-const partido = () => {
-  var eq1 = equipos[parseInt(Math.random()*equipos.length)].nombre
+var partido = () => {
+  var eq1 = equipos[parseInt(Math.random()*equipos.length)]
   do{
-    var eq2 = equipos[parseInt(Math.random()*equipos.length)].nombre
+    var eq2 = equipos[parseInt(Math.random()*equipos.length)] 
   }while(eq1 == eq2);
 
+  console.log(eq1);
   var resa = resultado_aleatorio();
   var resb = resultado_aleatorio();
-  console.log(resa);
+
   
   var equipoA = document.getElementById('e1');
   var equipoB = document.getElementById('e2');
@@ -47,8 +24,8 @@ const partido = () => {
   equipoB.innerHTML= eq2;
   huecoA.innerHTML = resa;
   huecoB.innerHTML = resb;
+  
 }
-
 
 const resultado_aleatorio = () => {
     var a = parseInt(Math.random()*100);
@@ -60,8 +37,5 @@ const resultado_aleatorio = () => {
     else if((a > 20 && a<=100))
         var resultado = parseInt(Math.random()*6);
 
-    console.log("------")
-    console.log(`a ${a}`)
-    console.log(`Hola ${resultado}`)
     return resultado;
 }
