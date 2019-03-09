@@ -6,13 +6,10 @@ var sonidos = ['https://manzdev.github.io/piano-keys/c1.mp3?', 'https://manzdev.
 'https://manzdev.github.io/piano-keys/a1.mp3?', 'https://manzdev.github.io/piano-keys/a1s.mp3?', 'https://manzdev.github.io/piano-keys/b1.mp3?',
 'https://manzdev.github.io/piano-keys/c21.mp3?'];
 
-function reproducir(id){
-    console.log(id);
-    var sonido = sonidos.map(e => e.indexOf(id + ".mp3"))
-    console.log(sonido);
-    var audio = new Audio(sonido);
-    audio.play();
-    console.log()
-}
 
-//console.log(teclas);
+function reproducir(id){
+    var array = sonidos.map(e => e.indexOf(id + ".mp3"));
+    var aux = array.indexOf(37);
+    var audio = new Audio(sonidos[aux]);
+    audio.play();
+}
