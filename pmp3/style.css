@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+#player{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#lcd{
+    font-family: Orbitron;
+    background: black;
+    height: 42px;
+    margin: 4px 0;
+    color: green;
+}
+
+.cabeza{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: transparent;
+    height: 100px;
+}

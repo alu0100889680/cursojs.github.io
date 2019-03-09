@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reproductor mp3</title>
+</head>
+<body>
+    <div class="cabeza">
+        <h1>Reproductor mp3</h1>
+    </div>
+    <div>
+        <div id="player">
+            <div id="lcd">
+                <audio id="song"></audio>
+            </div>
+            <button onclick=reproducir()><i class="fa fa-play" style="font-size:20px"></i></button>
+            <button onclick=pausar()><i class="fa fa-pause" style="font-size:20px"></i></button>
+            <button onclick=siguiente()><i class="fa fa-step-forward" style="font-size:22px"></i></button>
+        </div>
+    </div>
+
+        <script src="scripts.js"></script>
+</body>
+</html>

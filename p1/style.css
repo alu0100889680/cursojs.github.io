@@ -1,0 +1,12 @@
+.centro{
+  text-align: center;
+  margin: auto;
+}
+
+.cuadrado{
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  text-align: center;
+  margin: auto;
+}
